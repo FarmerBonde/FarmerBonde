@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      body {
+        background-color: rgb(16, 14, 46);
+      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+
+      background: white;
+      padding: 10px;
+    }
+
+
+    h1 {
+      text-decoration-color: white;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    h2  {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .score-board {
+
+      margin: 20px auto;
+      border: 3px solid white;
+      width: 200px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .box {
+      border: 3px solid white;
+      width: 200px;
+      font-size: 40px;
+      color: white;
+      border-radius: 20px;
+      padding: 15px 20px;
+      position: relative;
+    }
+
+
+    .badge {
+      background-color: red;
+      font-size: 14px;
+      padding: 2px 10px;
+
+
+    }
+    #user-label {
+      position: absolute;
+      top: 15%;
+      left: -20%;
+    }
+    #computer-label {
+      position: absolute;
+      top: 15%;
+      left: 98%;
+    }
+    .result {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .result > p {
+      text-align: center;
+      font-weight: bold;
+      padding: 40px;
+
+    }
+    .choices {
+      margin 50px 0;
+      text-align: center;
+    }
+    .choice {
+      border: 3px solid white;
+      border-radius: 30%;
+      padding: 10px;
+      margin: 0 20px;
+      display: inline-block;
+    }
+    .choice:hover {
+      cursor: pointer;
+      background: blue;
+    }
+
+    #valg {
+      font-size: 30px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    </style>
+    <meta charset="utf-8">
+    <title>Sten saks papir</title>
+  </head>
+  <body>
+    <center>
+    <header>
+      <h1>Sten Saks Papir!</h1>
+      <br>
+      <h2> Af Lauritz Bonde </h2>
+    </header>
+<br>
+  <div class="box">
+  <div id="user-label" class="badge"> Dig </div>
+  <div id="computer-label" class="badge"> Comp </div>
+  <span id="brugeren"> 0 </span>: <span id="computeren"> 0</span>
+  </div>
+</center>
+<div>
+  <p class="result"> Hvem vinder? </p>
+</div>
+
+<div class="choices">
+  <div class="choice" id="r" value="0">
+    <img src="rock.jpg" alt"" width="70px" height="50px">
+
+  </div>
+  <div class="choice" id="s" value="1">
+    <img src="saks.jpg" alt"" width="70px" height="50px">
+
+  </div>
+  <div class="choice" id="p" value="2">
+    <img src="papir.jpg" alt"" width="70px" height="50px">
+
+  </div>
+
+</div>
+<p id="valg"> Valget er dit! </p>
+<script src="sten_saks_papir.js" charset="utf-8"></script>
+  </body>
+</html>
